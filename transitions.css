@@ -1,0 +1,37 @@
+/* Акварель сводится к одной бумаге, не затрагивая содержимое экранов. */
+#экран-1,
+#экран-02,
+#экран-03,
+#экран-05 {
+  --переход-акварели: 96px;
+  background-color: var(--цвет-бумага);
+}
+
+#экран-1::before {
+  -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 calc(100% - var(--переход-акварели)), transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0, #000 calc(100% - var(--переход-акварели)), transparent 100%);
+}
+
+#экран-02::before,
+#экран-03::before,
+#экран-05::before {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 var(--переход-акварели), #000 calc(100% - var(--переход-акварели)), transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 var(--переход-акварели), #000 calc(100% - var(--переход-акварели)), transparent 100%);
+}
+
+#экран-1::after,
+#экран-02::after,
+#экран-03::after,
+#экран-05::after {
+  opacity: .13;
+  mix-blend-mode: normal;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 24px, #000 calc(100% - 24px), transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 24px, #000 calc(100% - 24px), transparent);
+}
+
+@media (max-width: 700px) {
+  #экран-1,
+  #экран-02,
+  #экран-03,
+  #экран-05 { --переход-акварели: 64px; }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" preserveAspectRatio="none">
+<defs><filter id="wash" x="-35%" y="-40%" width="170%" height="180%"><feTurbulence type="fractalNoise" baseFrequency=".025 .037" numOctaves="5" seed="17" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="145"/><feGaussianBlur stdDeviation="1.2" result="shape"/><feColorMatrix in="noise" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 1 0 -.65" result="pigment"/><feComposite in="shape" in2="pigment" operator="in"/></filter></defs>
+<g filter="url(#wash)">
+<path fill="#e6a98b" opacity=".24" d="M-100 -60H1530V155Q1210 270 940 145T370 205T-100 190Z"/>
+<path fill="#9db5cd" opacity=".3" d="M-90 245Q175 164 377 276T884 234T1505 200V395Q1210 448 896 362T363 407T-90 390Z"/>
+<path fill="#e7ad90" opacity=".2" d="M-110 435Q280 327 613 480T1530 420V625Q1140 732 774 612T-90 673Z"/>
+<path fill="#86a2bc" opacity=".29" d="M-90 701Q289 548 657 730T1525 660V970H-90Z"/>
+<path fill="#e6a98b" opacity=".2" d="M-80 870Q387 728 734 857T1510 798V1000H-80Z"/>
+</g></svg>

@@ -1,0 +1,67 @@
+:root{--кегль-h2:clamp(28px,4vw,44px)}
+
+#экран-03{position:relative;isolation:isolate;padding:48px 36px 62px}
+#экран-03.светлый,#экран-03.тёмный{background:var(--цвет-бумага);color:var(--цвет-чернила)}
+#экран-03:before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:url('assets/watercolor.svg') center/100% 100% no-repeat;opacity:.6}
+#экран-03:after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:url('assets/paper.svg');opacity:.13}
+#экран-03 .блок__внутри{max-width:1440px;margin:auto}
+#экран-03 .about-title{font:500 var(--кегль-мк-заголовок)/1.05 var(--font-hand);margin:0 0 30px;text-align:center}
+#экран-03.светлый .about-title,#экран-03.тёмный .about-title{color:var(--цвет-рукопись)}
+#экран-03 .about-layout{display:grid;grid-template-columns:1.18fr 1.08fr 1.22fr;grid-template-areas:'collage copy portrait';gap:28px;align-items:start}
+#экран-03 .about-text{font-size:var(--кегль-мк-текст);line-height:1.6;margin:0}
+#экран-03 .about-text+.about-text{margin-top:22px}
+#экран-03 .about-copy{grid-area:copy;min-width:0;padding-top:10px}
+#экран-03 .фото{margin:0;min-width:0}
+#экран-03 .фото img{display:block;width:100%;height:auto}
+#экран-03 .about-portrait{grid-area:portrait;width:100%;max-width:510px;margin-inline:auto}
+#экран-03 .about-portrait-frame{mask-image:linear-gradient(to bottom,var(--цвет-чернила) 92%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,var(--цвет-чернила) 92%,transparent 100%)}
+#экран-03 .about-portrait-frame img{transform:scaleX(-1)}
+#экран-03 .about-name{font:500 var(--кегль-h2)/1.12 var(--font-hand);margin:16px 0 0;text-align:center}
+#экран-03.светлый .about-name,#экран-03.тёмный .about-name{color:var(--цвет-рукопись)}
+#экран-03 .about-collage{grid-area:collage;display:grid;grid-template-columns:.85fr 1.15fr;gap:24px 18px;align-items:start;padding:14px 12px 18px}
+#экран-03 .about-stack{display:contents}
+#экран-03 .about-print{position:relative;padding:7px 7px 10px;box-shadow:var(--тень-мк);clip-path:polygon(0 1%,12% 0,25% 1%,42% 0,61% 1%,79% 0,99% 1%,100% 23%,99% 46%,100% 71%,99% 99%,78% 100%,58% 99%,36% 100%,16% 99%,0 100%,1% 75%,0 52%,1% 27%)}
+#экран-03.светлый .about-print,#экран-03.тёмный .about-print{background:var(--цвет-бумага);color:var(--цвет-чернила)}
+#экран-03 .about-doll-blue{grid-column:1;grid-row:1;transform:rotate(-3deg);z-index:2}
+#экран-03 .about-doll-pink{grid-column:2;grid-row:1;transform:rotate(3deg);z-index:1}
+#экран-03 .about-embroidery{grid-column:2;grid-row:2;transform:rotate(2deg);z-index:3;width:100%;margin:0}
+#экран-03 .about-dance{grid-column:1;grid-row:2/span 2;transform:rotate(-2deg);z-index:4}
+#экран-03 .about-belt{grid-column:2;grid-row:3;transform:rotate(-2deg);z-index:5;width:65%;margin:0 auto}
+#экран-03 .about-caption{font-size:var(--кегль-мк-подпись);line-height:1.35;margin:8px 0 0;text-align:center}
+@media(min-width:1700px){#экран-03 .about-collage{max-width:480px}}
+@media(max-width:1100px){
+ #экран-03{padding:46px 30px 56px}
+ #экран-03 .about-layout{grid-template-columns:1fr 1fr;grid-template-areas:'copy portrait' 'collage collage';gap:30px}
+ #экран-03 .about-portrait{max-width:430px}
+ #экран-03 .about-collage{grid-column:1/-1;max-width:550px;width:100%;margin:0 auto}
+}
+@media(max-width:700px){
+ #экран-03{padding:44px 18px 48px}
+ #экран-03:before{background-image:url('assets/watercolor-mobile.svg')}
+ #экран-03 .about-title{margin-bottom:24px;text-align:left}
+ #экран-03 .about-layout{grid-template-columns:1fr;grid-template-areas:'portrait' 'copy' 'collage';gap:28px}
+ #экран-03 .about-portrait{max-width:390px}
+ #экран-03 .about-copy{padding-top:0}
+ #экран-03 .about-name{margin-top:12px}
+ #экран-03 .about-text+.about-text{margin-top:20px}
+ #экран-03 .about-collage{grid-column:auto;max-width:440px;padding:10px 7px 8px}
+ #экран-03 .about-print{padding:5px 5px 9px}
+ #экран-03 .about-collage{gap:20px 14px}
+ #экран-03 .about-doll-blue{transform:rotate(-3deg)}
+ #экран-03 .about-doll-pink{transform:rotate(3deg)}
+ #экран-03 .about-dance{transform:rotate(-3deg)}
+}
+/* Бумажный контур отделён от внешней тени: clip-path больше её не обрезает. */
+#экран-03 .about-collage{gap:8px 0;padding:18px 20px 24px}
+#экран-03 .about-print{isolation:isolate;clip-path:none;box-shadow:none;padding:10px 10px 13px;filter:drop-shadow(0 2px 2px color-mix(in srgb,var(--цвет-чернила) 22%,transparent)) drop-shadow(3px 9px 8px color-mix(in srgb,var(--цвет-чернила) 25%,transparent))}
+#экран-03.светлый .about-print,#экран-03.тёмный .about-print{background:transparent}
+#экран-03 .about-print:before{content:'';position:absolute;inset:0;z-index:-1;background:var(--цвет-бумага);clip-path:polygon(0 1%,7% 0,15% 1%,24% 0,33% 1%,43% 0,52% 1%,62% 0,72% 1%,83% 0,93% 1%,99% 0,100% 12%,99% 25%,100% 39%,99% 52%,100% 66%,99% 80%,100% 94%,99% 100%,89% 99%,77% 100%,65% 99%,53% 100%,41% 99%,29% 100%,17% 99%,6% 100%,0 99%,1% 85%,0 71%,1% 57%,0 43%,1% 29%,0 15%)}
+#экран-03 .about-doll-blue{width:calc(100% + 16px);transform:rotate(-5deg)}
+#экран-03 .about-doll-pink{transform:translateX(-4px) rotate(4deg);z-index:3}
+#экран-03 .about-dance{width:calc(100% + 12px);transform:rotate(-4deg)}
+#экран-03 .about-embroidery{transform:translateX(-5px) rotate(3deg)}
+#экран-03 .about-belt{transform:rotate(-4deg)}
+@media(max-width:700px){
+ #экран-03 .about-collage{gap:8px 0;padding:16px 16px 22px}
+ #экран-03 .about-print{padding:8px 8px 12px}
+}

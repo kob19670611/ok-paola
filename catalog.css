@@ -1,0 +1,26 @@
+
+#экран-05{position:relative;isolation:isolate;padding:76px 36px 84px;background:var(--цвет-бумага);color:var(--цвет-чернила)}
+#экран-05::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:url('assets/catalog-watercolor.svg') center/100% 100% no-repeat;opacity:1}
+#экран-05::after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:url('assets/paper.svg');opacity:.13}
+#экран-05 .catalog-layout{max-width:1368px;margin:auto;display:grid;grid-template-columns:.85fr 1.3fr;column-gap:42px;align-items:center;position:relative}
+#экран-05 .catalog-title{grid-column:1;grid-row:1;align-self:end;font:500 var(--кегль-мк-заголовок)/1.05 var(--font-hand);color:var(--цвет-рукопись);margin:0 0 24px;text-wrap:balance}
+#экран-05 .catalog-copy{grid-column:1;grid-row:2;align-self:start;min-width:0}
+#экран-05 .catalog-copy p{font-size:var(--кегль-мк-текст);line-height:1.6;margin:0 0 26px;max-width:510px}
+#экран-05 .catalog-image{grid-column:2;grid-row:1/3;margin:0;min-width:0;width:100%;filter:drop-shadow(0 12px 12px color-mix(in srgb,var(--цвет-кнопка) 15%,transparent));pointer-events:none}
+#экран-05 .catalog-image{position:relative;aspect-ratio:16/9;filter:none}
+#экран-05 .catalog-image img,#экран-05 .catalog-image video{display:block;width:100%;height:auto}
+#экран-05 .catalog-image video{position:absolute;inset:0;visibility:hidden}
+#экран-05[data-video-state="playing"] .catalog-image video,#экран-05[data-video-state="finished"] .catalog-image video{visibility:visible}
+#экран-05[data-video-state="playing"] .catalog-still,#экран-05[data-video-state="finished"] .catalog-still{visibility:hidden}
+#экран-05 .catalog-button{position:relative;isolation:isolate;display:inline-flex;justify-content:center;align-items:center;border:0;background:none;color:var(--цвет-белый);font:500 var(--кегль-мк-кнопка)/1.4 var(--font-body);min-height:76px;padding:20px 30px;max-width:100%;text-align:center;text-decoration:none;cursor:default}
+#экран-05 .catalog-button::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--цвет-кнопка);mask:var(--маска-кнопки) center/100% 100% no-repeat}
+#экран-05 .catalog-button:focus-visible{outline:3px solid var(--цвет-рукопись);outline-offset:5px}
+@media(max-width:800px){
+#экран-05{padding:48px 22px 54px}
+#экран-05 .catalog-layout{display:flex;flex-direction:column;gap:0}
+#экран-05 .catalog-title{align-self:auto;order:0;text-align:center;margin:0 0 20px;max-width:550px}
+#экран-05 .catalog-image{order:1;width:calc(100% + 24px);margin:0 -12px 25px}
+#экран-05 .catalog-copy{order:2;align-self:auto;text-align:center;width:100%;max-width:550px}
+#экран-05 .catalog-copy p{margin:0 auto 23px}
+#экран-05 .catalog-button{width:100%;max-width:370px;padding:26px 24px;min-height:92px}
+}

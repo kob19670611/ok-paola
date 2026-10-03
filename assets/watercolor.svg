@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1100" viewBox="0 0 1440 1100" preserveAspectRatio="none">
+<defs>
+ <filter id="paint" x="-25%" y="-25%" width="150%" height="150%"><feTurbulence type="fractalNoise" baseFrequency=".023" numOctaves="5" seed="19" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="105" xChannelSelector="R" yChannelSelector="G"/><feGaussianBlur stdDeviation="1.3" result="shape"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  1 1 1 0 -.85" result="pigment"/><feComposite in="shape" in2="pigment" operator="in"/></filter>
+ <filter id="grain" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".12" numOctaves="3" seed="9" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="48"/><feGaussianBlur stdDeviation=".6"/></filter>
+</defs>
+<g filter="url(#paint)">
+ <path fill="#e6a98b" opacity=".38" d="M980 -80L1500 -70 1510 270 1370 250 1290 153 1130 172 1050 66Z"/>
+ <path fill="#86a2bc" opacity=".34" d="M1330 150L1490 80 1520 780 1430 930 1280 890 1250 701 1380 560 1310 402Z"/>
+ <path fill="#9db5cd" opacity=".46" d="M580 970L750 859 926 948 1090 862 1270 940 1490 840 1510 1190 540 1200Z"/>
+ <path fill="#e7ad90" opacity=".4" d="M1230 872L1480 812 1510 1180 1190 1150 1300 1020Z"/>
+ <path fill="#9ab3cd" opacity=".32" d="M-90 610L60 652 20 794 116 875 82 1070 -90 1160Z"/>
+</g>
+<g filter="url(#grain)" opacity=".22" fill="#7192b3"><path d="M1430 235L1490 170 1500 980 1350 999 1390 841 1310 746 1390 620 1340 550 1430 391Z"/><path d="M-40 890L39 802 62 932 150 1070 59 1190 -70 1150Z"/></g>
+</svg>
