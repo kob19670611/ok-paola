@@ -65,3 +65,8 @@
  #экран-03 .about-collage{gap:8px 0;padding:16px 16px 22px}
  #экран-03 .about-print{padding:8px 8px 12px}
 }
+#экран-03 .about-layout{grid-template-columns:1.4fr 1.08fr 1.22fr}
+#экран-03 .about-collage{grid-template-columns:1fr 1fr;padding-inline:12px;gap:22px 8px}
+#экран-03 .about-dance{grid-column:1/-1;grid-row:2;width:70%;margin-inline:auto;transform:rotate(-3deg)}
+@media(max-width:1100px){#экран-03 .about-layout{grid-template-columns:1fr 1fr}#экран-03 .about-collage{max-width:650px}}
+@media(max-width:700px){#экран-03 .about-layout{grid-template-columns:1fr}#экран-03 .about-collage{max-width:480px}}

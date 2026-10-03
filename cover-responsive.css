@@ -1,0 +1,11 @@
+/* На промежуточной ширине четыре куклы не помещаются в узкую колонку. */
+@media(min-width:701px) and (max-width:1100px){
+ #экран-1.cover{min-height:0;padding-bottom:56px}
+ #экран-1 .composition{display:flex;flex-direction:column;min-height:0;gap:0}
+ #экран-1 h1{order:0;max-width:760px;margin:12px 0 0}
+ #экран-1 .photo{order:1;flex:none;align-self:center;width:min(100%,650px);height:auto;aspect-ratio:3/4;margin:22px auto 10px}
+ #экран-1 .photo img{object-fit:contain;object-position:center}
+ #экран-1 .photo figcaption{top:12px;right:12px;font-size:29px;padding:14px 22px}
+ #экран-1 .copy{order:2;max-width:760px;padding:0}
+ #экран-1 .copy p{font-size:var(--кегль-мк-текст);line-height:1.5}
+}

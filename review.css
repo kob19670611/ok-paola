@@ -1,0 +1,14 @@
+#экран-02 .lesson-review{max-width:1120px;margin:54px auto 0;display:grid;grid-template-columns:minmax(0,.65fr) minmax(0,1.35fr);gap:40px;align-items:center;padding:30px;background:color-mix(in srgb,var(--цвет-бумага) 85%,transparent);border-radius:var(--радиус-карточки);box-shadow:var(--тень-мк)}
+#экран-02 .lesson-review-photo{margin:0;max-width:300px;justify-self:center}
+#экран-02 .lesson-review-photo img{display:block;width:100%;height:auto;border-radius:var(--радиус-малый)}
+#экран-02 .lesson-review-copy{min-width:0}
+#экран-02 .lesson-review h3{font:500 var(--кегль-h2)/1.15 var(--font-hand);color:var(--цвет-рукопись);margin:0 0 18px}
+#экран-02 .lesson-review-author{font-size:var(--кегль-мк-текст);margin:0 0 12px;font-weight:600}
+#экран-02 .lesson-review blockquote{font-size:var(--кегль-мк-текст);line-height:1.5;margin:0 0 18px}
+#экран-02 .lesson-review-source{font-size:var(--кегль-мк-подпись);color:var(--цвет-чернила);text-underline-offset:4px}
+#экран-02 .lesson-review-invite{display:block;margin:26px 0;padding:20px 22px;border-left:5px solid var(--цвет-рукопись);background:color-mix(in srgb,var(--цвет-рукопись) 12%,var(--цвет-бумага));border-radius:var(--радиус-малый);font-size:var(--кегль-мк-текст);font-weight:600;line-height:1.5;color:var(--цвет-чернила);text-decoration:none}
+#экран-02 .lesson-review-invite:hover{text-decoration:underline;text-underline-offset:4px}
+#экран-02 .lesson-review .mk-button{width:100%;max-width:560px;min-height:110px;padding:30px 38px;text-align:center;box-sizing:border-box}
+#экран-02 .lesson-review .mk-button::before{mask-image:url('assets/review-button.svg')}
+#экран-02 .lesson-review a:focus-visible{outline:3px solid var(--цвет-рукопись);outline-offset:5px}
+@media(max-width:700px){#экран-02 .lesson-review{grid-template-columns:1fr;margin-top:34px;padding:20px;gap:24px}#экран-02 .lesson-review-photo{max-width:260px}#экран-02 .lesson-review-invite{padding:18px 16px}#экран-02 .lesson-review .mk-button{width:100%;padding:30px 32px}}
