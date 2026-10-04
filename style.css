@@ -1,3 +1,5 @@
+@font-face{font-family:Caveat;src:url("assets/Caveat.woff2") format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0041-005A,U+0061-007A,U+00C0-024F}
+@font-face{font-family:Caveat;src:url("assets/Caveat-cyr.woff2") format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0000-0040,U+005B-0060,U+007B-00BF,U+0250-10FFFF}
 @font-face{font-family:ReferenceSans;src:url("assets/Montserrat-400.woff2") format("woff2");font-weight:400;font-display:swap}
 @font-face{font-family:ReferenceSans;src:url("assets/Montserrat-500.woff2") format("woff2");font-weight:500;font-display:swap}
 @font-face{font-family:ReferenceSans;src:url("assets/Montserrat-600.woff2") format("woff2");font-weight:600;font-display:swap}
@@ -48,7 +50,7 @@ h1{grid-column:1;grid-row:1;z-index:3;position:relative;font-size:46px;font-weig
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 
 
-@font-face{font-family:Caveat;src:url("assets/Caveat.woff2") format('woff2');font-weight:400 700;font-display:swap}
+
 :root{--font-body:ReferenceSans,sans-serif;--font-hand:Caveat,cursive}
 .cover{padding-bottom:90px;background:var(--paper)}
 .cover:before{content:'';position:absolute;inset:0;pointer-events:none;z-index:0;background:url("assets/watercolor.svg") center/100% 100% no-repeat;opacity:.85}
