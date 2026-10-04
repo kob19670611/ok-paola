@@ -1,5 +1,9 @@
-@font-face{font-family:Lora;src:url("assets/Lora.ttf") format('truetype');font-weight:400 700;font-display:swap}
-@font-face{font-family:'Marck Script';src:url("assets/MarckScript-Regular.ttf") format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:ReferenceSans;src:url("assets/Montserrat-400.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:ReferenceSans;src:url("assets/Montserrat-500.woff2") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:ReferenceSans;src:url("assets/Montserrat-600.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:ReferenceSans;src:url("assets/Montserrat-700.woff2") format("woff2");font-weight:700;font-display:swap}
+
+
 :root{--paper:#faf6ef;--ink:#243e57;--peach:#ad5945;--blue:#b6c8dc;--font-body:Lora,Georgia,serif;--font-hand:'Marck Script',cursive}
 *{box-sizing:border-box}html{background:var(--paper)}body{margin:0;color:var(--ink);font-family:var(--font-body);background:var(--paper)}
 .cover{position:relative;isolation:isolate;overflow:hidden;min-height:960px;padding:0 5.5% 70px;background:radial-gradient(ellipse at 98% 1%,#f1d2c0aa 0,transparent 40%),radial-gradient(ellipse at 96% 95%,#bfd0e4aa 0,transparent 55%),var(--paper)}
@@ -43,8 +47,8 @@ h1{grid-column:1;grid-row:1;z-index:3;position:relative;font-size:46px;font-weig
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 
-@font-face{font-family:ReferenceSans;src:url("assets/Montserrat.ttf") format('truetype');font-weight:100 900;font-display:swap}
-@font-face{font-family:Caveat;src:url("assets/Caveat.ttf") format('truetype');font-weight:400 700;font-display:swap}
+
+@font-face{font-family:Caveat;src:url("assets/Caveat.woff2") format('woff2');font-weight:400 700;font-display:swap}
 :root{--font-body:ReferenceSans,sans-serif;--font-hand:Caveat,cursive}
 .cover{padding-bottom:90px;background:var(--paper)}
 .cover:before{content:'';position:absolute;inset:0;pointer-events:none;z-index:0;background:url("assets/watercolor.svg") center/100% 100% no-repeat;opacity:.85}

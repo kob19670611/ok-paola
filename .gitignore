@@ -12,3 +12,20 @@ assets/valenki-doll.jpg
 assets/valenki-hand.jpg
 .DS_Store
 Thumbs.db
+# Originals retained locally; responsive WebP and WOFF2 are published.
+assets/dolls.webp
+assets/valenki-doll.webp
+assets/valenki-cat.webp
+assets/valenki-hand.webp
+assets/review-tatiana-valenki.webp
+assets/about-portrait.webp
+assets/about-doll-blue.webp
+assets/about-doll-pink.webp
+assets/about-daughter.webp
+assets/catalog-open-alpha.webp
+assets/Montserrat.ttf
+assets/Caveat.ttf
+assets/Lora.ttf
+assets/MarckScript-Regular.ttf
+assets/about-embroidery.webp
+assets/about-belt.webp
